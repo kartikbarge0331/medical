@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+           ul{
+                display:flex;
+                flex-direction: row;
+                gap: 2rem;
+                justify-content:flex-end;
+                margin-right: 5rem;
+                list-style: none;
+            }
+            li{
+                border:1px solid black;
+                border-radius:10px;
+                padding: 10px;
+            }
+            a{
+                text-decoration:none;
+                padding: 15px;
+            }
+            li:hover{
+                background-color: beige;
+            }
+            
+            /*Dropdown Main menu*/
+          
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Product item */
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+/* Main link */
+.menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Dropdown hidden by default */
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;  
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+        }
+
+        .dropdown-content li{
+            width:80px;
+            margin-top: 8px;
+        }    
+     /* Dropdown links */
+    .dropdown-content li a {
+       padding: 10px;
+       display: block;
+        color:black;
+         }
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+     }
+
+/* Hover inside dropdown */
+.dropdown-content li a:hover {
+    background: beige;
+     }
+     
+     .medmenu{
+         margin-right: 3rem;
+     }
+     
+        </style>
+    </head>
+    <body>
+        <h1>Welcome To Admin Panel</h1>
+        <hr>
+        <div class="medmenu">
+            <ul class="menu">
+                <li class="dropdown">
+               <a href="#" target="blank">Product</a>
+                <ul class="dropdown-content">
+                <li><a href="add.html" target="blank">Add</a></li>
+                <li><a href="view.html">View</a></li>
+                <li><a href="update.html">Update</a></li>
+                <li><a href="delete.html">Delete</a></li>
+                        </ul>
+                </li>
+                
+                
+                <li class="dropdown">
+                    <a href="#" target="blank">Staff</a>
+                    <ul class="dropdown-content">
+                <li><a href="Sadd.html" target="blank">Add</a></li>
+                <li><a href="Sview.html">View</a></li>
+                <li><a href="Supdate.html">Update</a></li>
+                <li><a href="Sdelete.html">Delete</a></li>
+                
+                        </ul>
+                    </li>
+                    
+                <li class="dropdown">
+                <a href="#" >Order</a>
+                <ul class="dropdown-content">
+                    <li><a href="acceptorder.html">Accept Order</a></li>
+                    <li><a href="cancleorder.html">Cancle Order</a></li>                  
+                </ul>
+            </li>
+            </ul>
+        </div>
+        
+    </body>
+</html>

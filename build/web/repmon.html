@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monthly Sales Report</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: #eef2f6;
+    }
+
+    .report-box{
+        width: 380px;
+        margin: 90px auto;
+        background: #ffffff;
+        padding: 25px 30px;
+        border-radius: 8px;
+        box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+    }
+
+    .report-box h2{
+        text-align: center;
+        margin-bottom: 25px;
+        color: #2c3e50;
+    }
+
+    label{
+        font-weight: bold;
+        color: #555;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input[type="month"]{
+        width: 100%;
+        padding: 9px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    input[type="submit"]{
+        width: 100%;
+        margin-top: 22px;
+        padding: 10px;
+        background: #28a745;
+        border: none;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover{
+        background: #1e7e34;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="report-box">
+    <h2>Monthly Sales Report</h2>
+
+    <form action="report">
+        <input type="hidden" name="type" value="monthly">
+
+        <label>Select Month</label>
+        <input type="month" name="month" required>
+
+        <input type="submit" value="View Report">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Customer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Form container */
+        form{
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 14px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        /* Table */
+        table{
+            border-collapse: separate;
+            border-spacing: 0 10px;
+        }
+
+        /* Table headings */
+        th{
+            text-align: left;
+            padding: 8px 12px;
+            color: #0f172a;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* Inputs */
+        input[type="text"]{
+            width: 260px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #cbd5f5;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus{
+            border-color: #38bdf8;
+            box-shadow: 0 0 0 2px rgba(56,189,248,0.2);
+        }
+
+        /* Buttons */
+        input[type="submit"],
+        input[type="reset"]{
+            padding: 10px 22px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]{
+            background: #0ea5e9;
+            color: #ffffff;
+        }
+
+        input[type="submit"]:hover{
+            background: #0284c7;
+        }
+
+        input[type="reset"]{
+            background: #e5e7eb;
+            color: #111827;
+        }
+
+        input[type="reset"]:hover{
+            background: #d1d5db;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="Cadd">
+        <table>
+            <tr>
+                <th>Customer Name</th>
+                <td><input type="text" name="n1"></td>
+            </tr>
+
+            <tr>
+                <th>Gender</th>
+                <td><input type="text" name="n2"></td>
+            </tr>
+
+            <tr>
+                <th>Mobile No.</th>
+                <td><input type="text" name="n3"></td>
+            </tr>
+
+            <tr>
+                <th>Address</th>
+                <td><input type="text" name="n4"></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

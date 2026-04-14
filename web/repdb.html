@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Date Between Sales Report</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+    }
+
+    .report-box{
+        width: 400px;
+        margin: 80px auto;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .report-box h2{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    label{
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    input[type="date"]{
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    input[type="submit"]{
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        background: #007bff;
+        border: none;
+        color: white;
+        font-size: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover{
+        background: #0056b3;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="report-box">
+    <h2>Date Between Report</h2>
+
+    <form action="report" >
+        <input type="hidden" name="type" value="between">
+
+        <label>From Date</label>
+        <input type="date" name="from" required>
+
+        <label>To Date</label>
+        <input type="date" name="to" required>
+
+        <input type="submit" value="View Report">
+    </form>
+</div>
+
+</body>
+</html><!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
